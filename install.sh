@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-if [ "$(whoami)" != "qatrol" ]; then
+if [ "$(whoami)" != "root" ]; then
   echo "скрипт предназначен для пользователя qatrol"
   exit 1
 fi
