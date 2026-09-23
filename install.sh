@@ -1,7 +1,12 @@
 #!/bin/bash
 set -e
+<<<<<<< HEAD
 if [ "$(whoami)" == "root" ]; then
   echo "dont start in root"
+=======
+if [ "$(whoami)" != "root" ]; then
+  echo "скрипт предназначен для пользователя qatrol"
+>>>>>>> 43af168174f78a7ef2c1d0ff4db8048d997c51ab
   exit 1
 fi
 if [ ! -d "$HOME/projects" ]; then
