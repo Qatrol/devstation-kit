@@ -43,5 +43,8 @@ if [ -d "$HOME/tools" ]; then
 else
   echo "❌ нет ~/tools"; ((fail++))
 fi
+
+echo "ℹ️ свободно на /: $(df -h / | awk 'NR==2 {print $4}')"
+
 echo "прошло: $ok, провалов: $fail"
 if [ "$fail" -gt 0 ]; then exit 1; fi
